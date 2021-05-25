@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vaudio_codec
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+!s100 8OI403HZiAaf6MkGQEbOf1
+IkDn4So9b57U5=E:5IW@nT0
+VQU_@fM>Ofb<Qg5EMY[HnV1
+Z2 !s105 audio_codec_sv_unit
+S1
+Z3 dC:\Sasha\Univer\Elektropribor\AudioCodec
+Z4 w1621945089
+Z5 8C:/Sasha/Univer/Elektropribor/AudioCodec/audio_codec.sv
+Z6 FC:/Sasha/Univer/Elektropribor/AudioCodec/audio_codec.sv
+L0 25
+Z7 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z8 !s108 1621945138.581000
+Z9 !s107 C:/Sasha/Univer/Elektropribor/AudioCodec/audio_codec.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|C:/Sasha/Univer/Elektropribor/AudioCodec/audio_codec.sv|
+!s101 -O0
+Z11 o-work work -sv -O0
+vi2c_master_control
+R1
+!i10b 1
+!s100 @gP`[]4m9n?jaFmPlKfW30
+Ibl8>NN_CTG:nL0C6He>CM3
+VdkSjL@FeBAZRN[NPlDM^^1
+R2
+S1
+R3
+R4
+R5
+R6
+L0 36
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+R11
