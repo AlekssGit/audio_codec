@@ -1,0 +1,61 @@
+module dai(
+	input wire mclk,
+	input wire clk_2048,
+	output wire bclk,
+	output wire lrclk,
+
+	input wire reset,
+	
+	output wire rom_clk,
+	output reg [17:0] rom_address,
+	input wire [15:0] rom_data,
+	
+	output wire output_to_dac;
+);
+
+reg [2:0] bclk_divider;
+reg [5:0] lrclk_divider;
+reg [15:0] shift_temp;
+reg new_sample;
+
+always@(posedge mclk) begin
+	if (reset) begin
+		bclk_divider <= 3'b111;
+		lrclk_divider <= 6'h63
+	end
+	else begin
+		bclk_divider <= bclk_divider + 3'h1;
+		lrclk_divider <= lrclk_divider + 6'h1;
+	end
+end
+
+assign bclk = bclk_divider[2]; //256 khz
+assign lrclk = ~lrclk_divider[5]; //8 khz
+assign romclk = ~lrclk_divider[4]; //16 khz, double the sample rate. Two samples per sample clock cycle to feed both channels
+
+always@(posedge clk_rom) begin //getting data from rom
+	if (reset) begin
+		rom_address <= 18'h0;
+		new_sample <= 1'b0;
+	end
+	else begin
+		if (rom_address < 18'd239988) begin
+			rom_address <= rom_address + 18'h1;
+		end
+		new_sample <= ~new_sample;
+	end
+end
+
+always@(negedge bclk) begin
+	if (new_sample) begin
+		shift_temp <= rom_data;
+	end
+	else begin
+		shift_temp <= shift_temp << 1;
+		shift_temp[0] <= 1'b0;
+	end
+end
+
+
+
+endmodule

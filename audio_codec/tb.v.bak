@@ -1,0 +1,39 @@
+module tb()
+
+reg clock;
+
+initial begin
+	clock = 0;
+end
+
+always begin
+	#20 clock = !clock;
+end
+
+SoCKit_i2sound uut(
+
+							///////////AUD/////////////
+		.AUD_ADCDAT(),
+		.AUD_ADCLRCK(),
+		.AUD_BCLK(),
+		.AUD_DACDAT(),
+		.AUD_DACLRCK(),
+		.AUD_I2C_SCLK(),
+		.AUD_I2C_SDAT(),
+		.AUD_MUTE(),
+		.AUD_XCK(),
+
+		.RESET_n(),
+		
+							/////////KEY/////////
+		.KEY(),
+
+							/////////LED/////////
+		.LED(),
+
+							/////////OSC/////////
+		.OSC_50_B3B(clock)
+
+);
+
+endmodule

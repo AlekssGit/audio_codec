@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at i2c_controller.sv(36): always construct contains both blocking and non-blocking assignments File: C:/Users/alvas/Documents/Univer/Elektropribor/audio_codec/Quartus/i2c_controller.sv Line: 36

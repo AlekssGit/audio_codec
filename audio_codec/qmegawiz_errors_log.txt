@@ -1,0 +1,11 @@
+
+
+C:/Users/Gear/Desktop/SoCKit_i2sound/pll.v
+
+May 26 06PM:10:55>: Megafunction PLL Intel FPGA IP v18.0 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/Gear/Desktop/SoCKit_i2sound/pll.v
+
+May 26 06PM:11:11>: Megafunction PLL Intel FPGA IP v18.0 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

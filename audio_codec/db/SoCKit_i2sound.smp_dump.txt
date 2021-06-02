@@ -1,0 +1,7 @@
+
+State Machine - |SoCKit_i2sound|i2c_av_config:av_config|control_state
+Name control_state.11 control_state.10 control_state.01 control_state.00 
+control_state.00 0 0 0 0 
+control_state.01 0 0 1 1 
+control_state.10 0 1 0 1 
+control_state.11 1 0 0 1 

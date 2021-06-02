@@ -1,0 +1,31 @@
+transcript on
+if ![file isdirectory SoCKit_i2sound_iputf_libs] {
+	file mkdir SoCKit_i2sound_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+
+vlog "C:/Users/Gear/Desktop/SoCKit_i2sound/pll_sim/pll.vo"
+
+vlog -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound {C:/Users/Gear/Desktop/SoCKit_i2sound/SoCKit_i2sound.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V {C:/Users/Gear/Desktop/SoCKit_i2sound/V/keytr.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V {C:/Users/Gear/Desktop/SoCKit_i2sound/V/i2c.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V {C:/Users/Gear/Desktop/SoCKit_i2sound/V/clock_500.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound {C:/Users/Gear/Desktop/SoCKit_i2sound/tb.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
+
+add wave *
+view structure
+view signals
+run -all

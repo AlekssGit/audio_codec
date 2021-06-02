@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Gear/Desktop/SoCKit_i2sound/simulation/modelsim
+T_opt
+!s110 1622046544
+VZ??7P_YB<j4XL^o_M286I0
+04 2 4 work tb fast 0
+=1-244bfe5a742c-60ae7750-dd-2904
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4c;61
+vaudio_rom
+Z1 !s110 1622046543
+!i10b 1
+!s100 f@VkYz90Jhn9TAgi]`OnC1
+I3>2_3NR]3bV4LDVWNJL[Z1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1622042033
+8C:/Users/Gear/Desktop/SoCKit_i2sound/audio_rom.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/audio_rom.v
+L0 39
+Z3 OL;L;10.4c;61
+r1
+!s85 0
+31
+Z4 !s108 1622046543.000000
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/audio_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound|C:/Users/Gear/Desktop/SoCKit_i2sound/audio_rom.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdai
+R1
+!i10b 1
+!s100 LDi05:_<ZjYHLaAY4Kc]:1
+IC7z2:W@FSWBZHh_z2<c0V1
+R2
+R0
+w1622044461
+8C:/Users/Gear/Desktop/SoCKit_i2sound/V/dai.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/V/dai.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/V/dai.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V|C:/Users/Gear/Desktop/SoCKit_i2sound/V/dai.v|
+!i113 0
+R5
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vi2c_av_config
+R1
+!i10b 1
+!s100 8KCM@QJonEf44?>Af>c5C3
+IKJ8]@kff?^b??d0ak83eV1
+R2
+R0
+w1622046443
+8C:/Users/Gear/Desktop/SoCKit_i2sound/V/clock_500.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/V/clock_500.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/V/clock_500.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V|C:/Users/Gear/Desktop/SoCKit_i2sound/V/clock_500.v|
+!i113 0
+R5
+R7
+vi2c_controller
+R1
+!i10b 1
+!s100 ld66Y4bB51>]fmh5DEbaF1
+I:aL_FbZGZZ@;BY6F;:P[G3
+R2
+R0
+w1622037061
+8C:/Users/Gear/Desktop/SoCKit_i2sound/V/i2c.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/V/i2c.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/V/i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound/V|C:/Users/Gear/Desktop/SoCKit_i2sound/V/i2c.v|
+!i113 0
+R5
+R7
+vpll2
+R1
+!i10b 1
+!s100 ICT_P?]^C2US?W8cQN9>N1
+I^4Y>Bd@7RN:P@V_CLznAM0
+R2
+R0
+w1622041961
+8C:/Users/Gear/Desktop/SoCKit_i2sound/pll2_sim/pll2.vo
+FC:/Users/Gear/Desktop/SoCKit_i2sound/pll2_sim/pll2.vo
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/pll2_sim/pll2.vo|
+!s90 -reportprogress|300|C:/Users/Gear/Desktop/SoCKit_i2sound/pll2_sim/pll2.vo|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vSoCKit_i2sound
+R1
+!i10b 1
+!s100 E74ES8fgjU8M81DMH3C192
+I?0?7=czdP?9h5JlTTO[j:1
+R2
+R0
+w1622046514
+8C:/Users/Gear/Desktop/SoCKit_i2sound/SoCKit_i2sound.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/SoCKit_i2sound.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/SoCKit_i2sound.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound|C:/Users/Gear/Desktop/SoCKit_i2sound/SoCKit_i2sound.v|
+!i113 0
+R5
+R6
+n@so@c@kit_i2sound
+vtb
+R1
+!i10b 1
+!s100 53LfLl6l=Sfh59PNhzfdG3
+In^9OZ1JAz95d97i8CaSPn2
+R2
+R0
+w1622042796
+8C:/Users/Gear/Desktop/SoCKit_i2sound/tb.v
+FC:/Users/Gear/Desktop/SoCKit_i2sound/tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gear/Desktop/SoCKit_i2sound/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gear/Desktop/SoCKit_i2sound|C:/Users/Gear/Desktop/SoCKit_i2sound/tb.v|
+!i113 0
+R5
+R6
